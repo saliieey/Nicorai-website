@@ -1,0 +1,127 @@
+═══════════════════════════════════════════════════════════════
+  NICORAI WEBSITE - PORTFOLIO PROJECT CARD
+═══════════════════════════════════════════════════════════════
+
+PROJECT NAME: NicorAI Website - AI-Powered Company Portfolio
+
+PROJECT TYPE: Full-Stack Web Application (Production-Ready MVP)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESCRIPTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A sophisticated, full-stack AI-powered company website that serves 
+as both a modern portfolio platform and an interactive AI demonstra-
+tion. Built with Next.js 15 and React 19, featuring an intelligent 
+chat interface powered by RAG systems, dynamic content views, and 
+enterprise-grade security. Deployed on AWS with optimized cloud 
+infrastructure for cost-effectiveness and scalability.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECH STACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Frontend:
+• Next.js 15.3.1 (React 19.0.0) with TypeScript
+• Tailwind CSS 4.0 + Framer Motion
+• React Markdown, Axios
+
+Backend:
+• Node.js/Express 5.1.0
+• Zod validation, Redis caching
+• N8N webhook integration, reCAPTCHA v3
+
+Infrastructure:
+• AWS S3 + CloudFront (Frontend)
+• AWS App Runner (Backend)
+• Terraform (Infrastructure as Code)
+• Docker containerization
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤖 AI-Powered Chat Interface
+   • RAG-based conversational AI
+   • Persistent chat history
+   • Redis caching for performance
+   • Real-time message processing
+
+📱 Dynamic Content System
+   • About Us, Services, Portfolio, Blog views
+   • Smooth animations and transitions
+   • Mobile-responsive design
+   • Auto-refresh version checking
+
+🔒 Enterprise Security
+   • Rate limiting (100 req/15min)
+   • reCAPTCHA v3 bot protection
+   • Zod schema validation
+   • Secure HTTP headers
+
+⚡ Performance Optimized
+   • Static site generation
+   • CDN distribution
+   • Response caching layer
+   • Optimized bundle sizes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECHNICAL HIGHLIGHTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Production-ready full-stack application
+✓ Type-safe TypeScript implementation
+✓ Enterprise-grade security implementation
+✓ Performance optimized (static generation + CDN)
+✓ Cost-effective cloud architecture (~$17/month)
+✓ Scalable design (horizontal scaling ready)
+✓ Modern development practices (IaC, CI/CD ready)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ARCHITECTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Frontend (Next.js) → API Gateway (Express) → N8N Workflows
+                          ↓
+                    Redis Cache
+                          ↓
+              Email Service (SMTP)
+
+Infrastructure:
+• Frontend: S3 + CloudFront (Global CDN)
+• Backend: AWS App Runner (Auto-scaling)
+• Caching: Redis (External service)
+• IaC: Terraform for provisioning
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PORTFOLIO VALUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Demonstrates expertise in:
+• Modern React/Next.js development
+• TypeScript and type safety
+• RESTful API design and integration
+• AWS cloud services and infrastructure
+• Security best practices
+• Performance optimization
+• Cost-effective solution architecture
+• Production-ready code quality
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROJECT STATUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Status: ✅ Production-Ready MVP
+Deployment: AWS Cloud
+Monthly Cost: ~$17.49 (optimized)
+Scalability: Horizontal scaling supported
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TAGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next.js, React, TypeScript, Node.js, Express, AWS, Terraform, 
+AI/ML, Redis, Full-Stack, Production-Ready, Cloud Architecture
+
+═══════════════════════════════════════════════════════════════
+

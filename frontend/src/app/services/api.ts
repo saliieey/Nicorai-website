@@ -2,7 +2,7 @@
 // Connects to the real API Gateway
 
 // Configuration
-const API_GATEWAY_URL = process.env.NEXT_PUBLIC_API_URL ;
+const API_GATEWAY_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
 // Types
 export interface ChatMessage {
@@ -30,12 +30,22 @@ class ApiService {
 
   constructor() {
     this.initializeChat();
-    this.checkApiAvailability();
+    // Only check API availability in the browser, not during build/SSR
+    if (typeof window !== 'undefined') {
+      this.checkApiAvailability();
+    }
   }
 
 
   // Check if API is available
   private async checkApiAvailability() {
+    // Don't check if API URL is not configured
+    if (!API_GATEWAY_URL || API_GATEWAY_URL === 'undefined' || API_GATEWAY_URL.trim() === '') {
+      this.apiAvailable = false;
+      console.warn('API Gateway URL is not configured');
+      return;
+    }
+
     try {
       const response = await fetch(`${API_GATEWAY_URL}/health`, { 
         method: 'GET',
@@ -339,6 +349,11 @@ class ApiService {
         recaptchaToken: recaptchaToken, // Only present for first message in chat
       };
  
+      // Check if API URL is configured
+      if (!API_GATEWAY_URL || API_GATEWAY_URL === 'undefined' || API_GATEWAY_URL.trim() === '') {
+        throw new Error('API Gateway URL is not configured');
+      }
+
       // Log request with complete details for debugging
       console.log('🚀 Sending complete message details to API Gateway:', {
         userId: payload.userId,
@@ -347,8 +362,8 @@ class ApiService {
         message: payload.message,
         timestamp: payload.timestamp
       });
- 
- 
+
+
       // Make the actual API call
       const response = await fetch(`${API_GATEWAY_URL}/chat`, {
         method: 'POST',
